@@ -1,0 +1,63 @@
+.masthead {
+    height: 100vh;
+    min-height: 200px;
+    background-image: url('lilzidesigns-3iUE4iEIdJw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+@keyframes color-change {
+    0% {-webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #4FC05E;}
+    25% {-webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #0496FF;}
+    50% {-webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #FFBC42;}
+    75% {-webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #D81159;}
+    100% {-webkit-text-stroke-width: 2px;
+         -webkit-text-stroke-color: #4FC05E;}
+}
+
+.logo-txt {
+    font-size: 25vh;
+    color: #eee;
+    animation-name: color-change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+
+
+.sub-txt {
+    font-size: 7vh;
+    color: #eee;
+    -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+
+.rainbow-nav {
+--angle: 0deg;
+border-bottom: 5px solid;
+border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+
+animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+to {
+    --angle: 360deg;
+}
+}
+
+@property --angle {
+syntax: '<angle>';
+initial-value: 0deg;
+inherits: false;
+}

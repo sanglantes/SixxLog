@@ -1,8 +1,13 @@
-body {
-    background-image: url(../lilzidesigns-3iUE4iEIdJw-unsplash.jpg);
-    height: 20vh;
-    max-height: 400px;
-}
+.masthead {
+    height: 100vh;
+    min-height: 200px;
+    background-image: url('../lilzidesigns-3iUE4iEIdJw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    z-index: -3;
+  }
 
 .btn {
     border: none;
@@ -11,14 +16,13 @@ body {
     cursor: pointer;
     font-size: 5vh;
     transition: 1s;
+    border-radius: 0;
   }
   
   /* Darker background on mouse-over */
   .btn:hover {
     background-color: #2a2e30;
   }
-
-
 
   .gradient-border {
     --borderWidth: 2px;

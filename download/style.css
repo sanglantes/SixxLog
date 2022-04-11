@@ -1,12 +1,19 @@
 .masthead {
     height: 100vh;
+    background-image: url('../lilzidesigns-3iUE4iEIdJw-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.25);
+  }
+
+  .masthead::before {
+    height: 100vh;
     min-height: 200px;
     background-image: url('../lilzidesigns-3iUE4iEIdJw-unsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.9;
-    z-index: -3;
   }
 
 .btn {
@@ -17,17 +24,20 @@
     font-size: 5vh;
     transition: 1s;
     border-radius: 0;
+    z-index: 5;
   }
   
   /* Darker background on mouse-over */
   .btn:hover {
-    background-color: #2a2e30;
+    background-color: white;
+    color: lightgray;
   }
 
   .gradient-border {
     --borderWidth: 2px;
     background: #1D1F20;
     position: relative;
+    opacity: 1;
   }
   .gradient-border:after {
     content: '';
@@ -38,7 +48,7 @@
     width: calc(100% + var(--borderWidth) * 2);
     background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
     z-index: -1;
-    animation: animatedgradient 5s ease alternate infinite;
+    animation: animatedgradient 7s ease alternate infinite;
     background-size: 300% 300%;
   }
   
@@ -55,5 +65,24 @@
       }
   }
   
-  
-  
+  .logo-txt {
+    font-size: 25vh;
+    color: #eee;
+    animation-name: color-change;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+
+.sub-txt {
+    font-size: 7vh;
+    color: #eee;
+    opacity: 0;
+    -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}

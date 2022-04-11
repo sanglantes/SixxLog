@@ -91,3 +91,23 @@ a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
+
+.rainbow-nav {
+    --angle: 0deg;
+    border-bottom: 5px solid;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    
+    animation: 10s rotate linear infinite;
+    }
+    
+    @keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+    }
+    
+    @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+    }

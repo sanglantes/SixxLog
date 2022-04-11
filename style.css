@@ -24,7 +24,7 @@
     font-size: 25vh;
     color: #eee;
     animation-name: color-change;
-    animation-duration: 10s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
     -webkit-user-select: none; /* Safari */        
 -moz-user-select: none; /* Firefox */
